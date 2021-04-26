@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //定义一个函数  给函数一个数据 在函数里处理 reture 一个值
+        function add(num1,num2) {
+            return num1+num2
+        }
+        var a= 11
+        var b =22
+        // 调用一个函数
+        var res = add(a,b)
+        console.log(res);
+        // 定义一个加法
+        function add() {
+            console.log(arguments);
+            return arguments[0]+arguments[1]+arguments[2]
+
+        }
+        add(11,22,33);
+        console.log(add(11,22,33));
+        fun()
+        function fun() {
+            console.log(1111);
+        }
+        function fun() {
+            console.log(2222);
+        }
+        fun()
+    </script>
+</body>
+</html>
