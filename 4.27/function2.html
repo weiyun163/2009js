@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>函数当值再返回来
+    </title>
+</head>
+<body>
+    <script>
+        //定义一个函数
+        function add() {
+            return "魏云"
+        }
+        //在定义一个函数
+        function test(){
+            return add
+        }
+        //函数返回字符串
+        //如何得add到内容
+        // 1.调用
+        var res =test()
+        console.log(res);
+        console.log(res());
+
+    </script>
+</body>
+</html>

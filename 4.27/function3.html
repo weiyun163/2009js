@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>变量存在的范围 作用域</title>
+</head>
+<body>
+    <script>
+        //全局
+        var a=123
+        console.log(a);
+        //2.局部
+        function test() {
+            var a="weiyun"
+        }
+        console.log(a);//外部访问不到
+        // 全局可以访问局部的
+        var aaa="魏云"
+        function test() {
+            console.log(aaa);
+        }
+        // 调、用
+        test()
+    </script>
+</body>
+</html>
